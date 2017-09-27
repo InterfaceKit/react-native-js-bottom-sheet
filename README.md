@@ -70,23 +70,22 @@ export default class Example extends Component {
 ```
 
 ## API
-| Prop          | Type          | Required  | | Description  |
-| ------------- |:-------------:| ---------:| | ------------:|
-| `styleContainer`       | `Object` | No     | | Styles for the container.     |
-| `coverScreen`       | `bool`      |   No     | | Will use RN Modal component to cover the entire screen wherever the modal is mounted in the component hierarchy. |
-| `backButtonEnabled`   | `bool`      | No | | Close modal when receiving back button event. |
-| `height`     | `number`    | No| | Height of container. By default it has no height, due to container grows automatically depending of list of items. |
-| `title`       | `string`      | Yes| | Title displayed in top of list. |
-| `options` | `Array<Object>`      | Yes| | Array of Objects to display options list.|
-| `fontFamily`   | `string`     |No | | fontFamily attribute used to display values. By default is Roboto. |
-| `titleFontFamily`   | `string`     |No | | fontFamily attribute applied to title. |
-| `isOpen`   | `bool`     |No | | Specifies if bottom sheet is open by default.|
-| `refs`   | `Function`     |Yes | |  |
+| Prop              | Type          | Required | Description                                                                                                              |
+|-------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
+| coverScreen       |      bool     |    No    | Will use RN Modal component to cover the entire screen wherever the modal is mounted in the component hierarchy          |
+| backButtonEnabled |      bool     |    No    | Close modal when receiving back button event                                                                             |
+| height            |     number    |    No    | Height of the container. By default it has no height, due to container grows automatically depending of list of elements |
+| title             |     string    |    Yes   | Title displayed in top of list                                                                                           |
+| options           | Array<Object> |    Yes   | Array of objects to display options list                                                                                 |
+| fontFamily        |     string    |    No    | Used to display values. By default is Roboto                                                                             |
+| titleFontFamily   |     string    |    No    | Applied to title                                                                                                         |
+| isOpen            |      bool     |    No    | Specifies if bottom sheet is open by default                                                                             |
+| refs              |    Function   |    Yes   |                                                                                                                          |
 
 ## License
 MIT License
 
-Copyright (c) 2017 APSL
+Copyright (c) 2017 InterfaceKit
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
