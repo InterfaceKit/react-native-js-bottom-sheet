@@ -2,6 +2,9 @@
 Modal bottom sheet component for Android that follows the guidelines of Material Design.
 
 https://material.io/guidelines/components/bottom-sheets.html
+
+![alt text](./example.png)
+
 ## Getting started
 In order to work, it's necessary install first [react-native-modalbox](https://github.com/maxs15/react-native-modalbox):
 ```sh
