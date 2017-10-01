@@ -23,8 +23,11 @@ import React, { Component } from 'react'
 import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native'
 import BottomSheet from 'react-native-js-bottom-sheet'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import Entypo from 'react-native-vector-icons/Entypo'
 
 export default class Example extends Component {
+  bottomSheet: BottomSheet
+
   _onPressButton = () => {
     this.bottomSheet.open()
   }
@@ -32,38 +35,58 @@ export default class Example extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Open Bottom Sheet" onPress={this._onPressButton} />
+        <Button title="Open" onPress={this._onPressButton} />
         <BottomSheet
           refs={(ref: BottomSheet) => {
             this.bottomSheet = ref
           }}
+          itemDivider={3}
+          backButtonEnabled={true}
           coverScreen={false}
-          title="Open with"
+          title="Create"
           options={[
             {
-              title: 'WhatsApp',
+              title: 'Document',
               icon: (
                 <MaterialCommunityIcons
-                  name="whatsapp"
-                  color="green"
+                  name="file-document-box"
+                  color="#2186fa"
                   size={24}
                 />
               ),
-              onPress: () => {
-                console.log('Open WhatsApp')
-              }
+              onPress: () => null
             },
             {
-              title: 'Telegram',
+              title: 'Spreadsheet',
+              icon: <Entypo name="spreadsheet" color="#43a047" size={24} />,
+              onPress: () => null
+            },
+            {
+              title: 'Folder',
               icon: (
-                <MaterialCommunityIcons name="telegram" color="blue" size={24} />
+                <MaterialCommunityIcons name="folder" color="grey" size={24} />
               ),
-              onPress: () => {
-                console.log('Open Telegram')
-              }
+              onPress: () => null
+            },
+            {
+              title: 'Upload photos or videos',
+              icon: (
+                <MaterialCommunityIcons
+                  name="cloud-upload"
+                  color="grey"
+                  size={24}
+                />
+              ),
+              onPress: () => null
+            },
+            {
+              title: 'Use Camera',
+              icon: (
+                <MaterialCommunityIcons name="camera" color="grey" size={24} />
+              ),
+              onPress: () => null
             }
           ]}
-          fontFamily="Avenir"
           isOpen={false}
         />
       </View>
@@ -75,15 +98,16 @@ export default class Example extends Component {
 ## API
 | Prop              | Type          | Required | Description                                                                                                              |
 |-------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| coverScreen       |      bool     |    No    | Will use RN Modal component to cover the entire screen wherever the modal is mounted in the component hierarchy          |
-| backButtonEnabled |      bool     |    No    | Close modal when receiving back button event                                                                             |
-| height            |     number    |    No    | Height of the container. By default it has no height, due to container grows automatically depending of list of elements |
-| title             |     string    |    Yes   | Title displayed in top of list                                                                                           |
-| options           | Array<Object> |    Yes   | Array of objects to display options list                                                                                 |
-| fontFamily        |     string    |    No    | Used to display values. By default is Roboto                                                                             |
-| titleFontFamily   |     string    |    No    | Applied to title                                                                                                         |
-| isOpen            |      bool     |    No    | Specifies if bottom sheet is open by default                                                                             |
-| refs              |    Function   |    Yes   |                                                                                                                          |
+| coverScreen       | bool          | No       | Will use RN Modal component to cover the entire screen wherever the modal is mounted in the component hierarchy          |
+| backButtonEnabled | bool          | No       | Close modal when receiving back button event                                                                             |
+| height            | number        | No       | Height of the container. By default it has no height, due to container grows automatically depending of list of elements |
+| title             | string        | Yes      | Title displayed in top of list                                                                                           |
+| options           | Array<Object> | Yes      | Array of objects to display options list                                                                                 |
+| fontFamily        | string        | No       | Used to display values. By default is Roboto                                                                             |
+| titleFontFamily   | string        | No       | Title font family                                                                                                        |
+| isOpen            | bool          | No       | Specifies if bottom sheet is open by default                                                                             |
+| refs              | Function      | Yes      |                                                                                                                          |
+| itemDivider       | number        | No       | Insert an item separator below the specified item number                                                                 |
 
 ## License
 MIT License
