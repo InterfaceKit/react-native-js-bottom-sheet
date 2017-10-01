@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.12",
     "react-native": "0.48.2",
+    "react-native-js-bottom-sheet": "https://github.com/InterfaceKit/react-native-js-bottom-sheet.git",
     "react-native-modalbox": "^1.4.2",
     "react-native-vector-icons": "^4.3.0"
   },
