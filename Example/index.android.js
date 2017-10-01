@@ -22,6 +22,7 @@ export default class Example extends Component {
             this.bottomSheet = ref
           }}
           itemDivider={3}
+          backButtonEnabled={true}
           coverScreen={false}
           title="Create"
           options={[
