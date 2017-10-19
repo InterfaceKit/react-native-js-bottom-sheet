@@ -1,0 +1,55 @@
+{
+  "name": "react-native-js-bottom-sheet",
+  "version": "0.1.0",
+  "description":
+    "Modal bottom sheet component for Android that follows the guidelines of Material Design.",
+  "author": "Antonio Moreno Valls <amoreno@apsl.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InterfaceKit/react-native-js-bottom-sheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InterfaceKit/react-native-js-bottom-sheet/issues"
+  },
+  "tags": ["react", "react-native", "react-component", "android"],
+  "keywords": [
+    "react",
+    "react-native",
+    "bottom",
+    "sheet",
+    "android",
+    "react-component",
+    "bottom-sheet",
+    "multiplatform",
+    "bottomsheet"
+  ],
+  "scripts": {
+    "prettier":
+      "prettier --single-quote --print-width 81 --write index.js lib/BottomSheet.js",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@types/react-native-modalbox": "^1.4.2",
+    "@types/prop-types": "^15.5.1",
+    "react-native-modalbox": "^1.4.2",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/prettier": "^1.7.0",
+    "babel-jest": "21.0.2",
+    "babel-preset-react-native": "3.0.2",
+    "eslint": "^4.7.2",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "flow": "^0.2.3",
+    "jest": "21.0.2",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
