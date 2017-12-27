@@ -6,7 +6,7 @@ import BottomSheet from 'react-native-js-bottom-sheet'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import Entypo from 'react-native-vector-icons/Entypo'
 
-export default class Example extends Component {
+export default class Example extends React.PureComponent<{}> {
   bottomSheet: BottomSheet
 
   _onPressButton = () => {
