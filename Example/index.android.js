@@ -18,7 +18,7 @@ export default class Example extends React.PureComponent<{}> {
       <View style={styles.container}>
         <Button title="Open" onPress={this._onPressButton} />
         <BottomSheet
-          refs={(ref: BottomSheet) => {
+          ref={(ref: BottomSheet) => {
             this.bottomSheet = ref
           }}
           itemDivider={3}

@@ -1,19 +1,24 @@
 # react-native-js-bottom-sheet
+
 Modal bottom sheet component for Android that follows the guidelines of Material Design.
 
 https://material.io/guidelines/components/bottom-sheets.html
 
-![alt text](./example.png)
+<p align="center">
+<img src="./example.png" alt="Stepper" width="400">
+</p>
 
-## Getting started
+## Getting startedgit s
+
 ```sh
 $ yarn add react-native-js-bottom-sheet
 ```
+
 ## Usage
+
 Code refers to the previous image example:
 
 ```js
-
 /* @flow */
 
 import React, { Component } from 'react'
@@ -34,7 +39,7 @@ export default class Example extends Component {
       <View style={styles.container}>
         <Button title="Open" onPress={this._onPressButton} />
         <BottomSheet
-          refs={(ref: BottomSheet) => {
+          ref={(ref: BottomSheet) => {
             this.bottomSheet = ref
           }}
           itemDivider={3}
@@ -93,8 +98,9 @@ export default class Example extends Component {
 ```
 
 ## API
+
 | Prop              | Type          | Required | Description                                                                                                              |
-|-------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
+| ----------------- | ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------ |
 | coverScreen       | bool          | No       | Will use RN Modal component to cover the entire screen wherever the modal is mounted in the component hierarchy          |
 | backButtonEnabled | bool          | No       | Close modal when receiving back button event                                                                             |
 | height            | number        | No       | Height of the container. By default it has no height, due to container grows automatically depending of list of elements |
@@ -103,15 +109,16 @@ export default class Example extends Component {
 | fontFamily        | string        | No       | Used to display values. By default is Roboto                                                                             |
 | titleFontFamily   | string        | No       | Title font family                                                                                                        |
 | isOpen            | bool          | No       | Specifies if bottom sheet is open by default                                                                             |
-| refs              | Function      | Yes      |                                                                                                                          |
 | itemDivider       | number        | No       | Insert an item separator below the specified item number                                                                 |
 
 ## License
+
 MIT License
 
 Copyright (c) 2017 InterfaceKit
 
 ## Author
+
 Antonio Moreno Valls `<amoreno at apsl.net>`
 
 Built with 💛 by [APSL](https://github.com/apsl).
