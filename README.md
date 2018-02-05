@@ -8,7 +8,7 @@ https://material.io/guidelines/components/bottom-sheets.html
 <img src="./example.png" alt="Stepper" width="400">
 </p>
 
-## Getting startedgit s
+## Getting started
 
 ```sh
 $ yarn add react-native-js-bottom-sheet
