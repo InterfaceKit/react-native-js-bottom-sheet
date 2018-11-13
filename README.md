@@ -1,6 +1,6 @@
 # react-native-js-bottom-sheet
 
-Modal bottom sheet component for Android that follows the guidelines of Material Design.
+Modal bottom sheet component for Android and iOS that follows the guidelines of Material Design.
 
 https://material.io/guidelines/components/bottom-sheets.html
 
@@ -115,7 +115,7 @@ export default class Example extends Component {
 
 MIT License
 
-Copyright (c) 2017 InterfaceKit
+Copyright (c) 2018 InterfaceKit
 
 ## Author
 
