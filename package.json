@@ -1,8 +1,7 @@
 {
   "name": "react-native-js-bottom-sheet",
   "version": "1.0.0",
-  "description":
-    "Modal bottom sheet component for Android that follows the guidelines of Material Design.",
+  "description": "Modal bottom sheet component for Android and iOS that follows the guidelines of Material Design.",
   "author": "Antonio Moreno Valls <amoreno@apsl.net>",
   "license": "MIT",
   "repository": {
@@ -12,21 +11,27 @@
   "bugs": {
     "url": "https://github.com/InterfaceKit/react-native-js-bottom-sheet/issues"
   },
-  "tags": ["react", "react-native", "react-component", "android"],
+  "tags": [
+    "react",
+    "react-native",
+    "react-component",
+    "android",
+    "ios"
+  ],
   "keywords": [
     "react",
     "react-native",
     "bottom",
     "sheet",
     "android",
+    "ïos",
     "react-component",
     "bottom-sheet",
     "multiplatform",
     "bottomsheet"
   ],
   "scripts": {
-    "prettier":
-      "prettier --single-quote --print-width 81 --write index.js lib/BottomSheet.js",
+    "prettier": "prettier --single-quote --print-width 81 --write index.js lib/BottomSheet.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
