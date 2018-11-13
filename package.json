@@ -1,6 +1,6 @@
 {
   "name": "react-native-js-bottom-sheet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Modal bottom sheet component for Android and iOS that follows the guidelines of Material Design.",
   "author": "Antonio Moreno Valls <amoreno@apsl.net>",
   "license": "MIT",
