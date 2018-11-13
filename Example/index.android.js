@@ -1,17 +1,17 @@
 /* @flow */
 
-import React, { Component } from 'react'
-import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native'
-import BottomSheet from 'react-native-js-bottom-sheet'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import Entypo from 'react-native-vector-icons/Entypo'
+import React, { Component } from 'react';
+import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native';
+import BottomSheet from 'react-native-js-bottom-sheet';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 export default class Example extends React.PureComponent<{}> {
-  bottomSheet: BottomSheet
+  bottomSheet: BottomSheet;
 
   _onPressButton = () => {
-    this.bottomSheet.open()
-  }
+    this.bottomSheet.open();
+  };
 
   render() {
     return (
@@ -19,7 +19,7 @@ export default class Example extends React.PureComponent<{}> {
         <Button title="Open" onPress={this._onPressButton} />
         <BottomSheet
           ref={(ref: BottomSheet) => {
-            this.bottomSheet = ref
+            this.bottomSheet = ref;
           }}
           itemDivider={3}
           backButtonEnabled={true}
@@ -71,7 +71,7 @@ export default class Example extends React.PureComponent<{}> {
           isOpen={false}
         />
       </View>
-    )
+    );
   }
 }
 
@@ -79,6 +79,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   }
-})
+});
 
-AppRegistry.registerComponent('Example', () => Example)
+AppRegistry.registerComponent('Example', () => Example);
