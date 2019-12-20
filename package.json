@@ -39,7 +39,7 @@
   "dependencies": {
     "@types/react-native-modalbox": "^1.4.2",
     "@types/prop-types": "^15.5.1",
-    "react-native-modalbox": "^1.4.2",
+    "react-native-modalbox": "^2.0.0",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
